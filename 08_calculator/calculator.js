@@ -22,8 +22,13 @@ const power = function(num1, num2) {
   return powered;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+	if (num == 0) return 1;
+  let hold = 1;
+  for (let i = 1; i <= num; i++) {
+    hold = hold * i;
+  }
+  return hold;
 };
 
 // Do not edit below this line
